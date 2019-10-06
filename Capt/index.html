@@ -1,0 +1,60 @@
+<!doctype>
+
+<html>
+  <head>
+    <title>DBP19 - Malmö University</title>
+    <meta charset="utf-8">
+    <meta author="Erik Pineiro">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">    
+  </head>
+  <body class="centerFlex">
+    
+    <div id="wrapper" class="centerFlex">
+      <div id="content">
+        <header>
+          <img src='icons/logo.png' alt="logo">
+        </header>
+        <div id='allPages'>
+          <div id='pageHome' class="centerFlex">
+            <div class='knapp' id='knappLogin'>LOGIN / REGISTER</div>
+            <div class='knapp' id='knappUpload'>UPLOAD PICTURE</div>
+            <div class='knapp' id='knappVote'>VOTE</div>
+            <div class='knapp' id='knappWrite'>WRITE CAPTION</div>
+          </div>
+          <div id='pageLogin'>
+            <div class='knapp home'>MENU</div>
+          </div>
+          <div id='pageUpload'>
+            <div class='knapp home'>MENU</div>
+          </div>
+          <div id='pageVote'>
+            <div class='image'></div>
+            <div class='caption'></div>
+            <div class='votes'>
+              <div id='voteAverage' class='centerFlex'></div>
+            </div>
+            <div class='knapp' id='knappCancelVote'>CANCEL AND NEXT</div>
+            <div class='knapp home'>MENU</div>
+          </div>
+          <div id='pageWrite'>
+            <div class='image'></div>
+            <div class='captionContainer'>
+              <form>
+                <input type='text' class='caption'>
+              </form>
+            </div>
+            <div class='knappContainer'>
+              <div class='knapp' id='knappCaptionOK'>OK</div>
+              <div class='knapp' id='knappCancelWrite'>CANCEL AND NEXT</div>
+              <div class='knapp home'>MENU</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
